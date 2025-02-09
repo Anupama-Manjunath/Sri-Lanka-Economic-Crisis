@@ -17,13 +17,14 @@ Political stability was stationary at level.
 
 ## 3. Time Series Regression (Dynamic Linear Model)
 A dynamic regression model (dynlm) is estimated:
+
 GDP Growth (t) = β₀ + β₁ (Reserves (t-1)) + β₂ (Political Stability (t-1)) + β₃ (External Debt (t-1)) + ϵₜ
 
 ### Autocorrelation and Heteroscedasticity Checks
 - Breusch-Godfrey (BG) Test: Tests for autocorrelation.
 - Breusch-Pagan (BP) Test: Tests for heteroscedasticity.
 - Newey-West Standard Errors: Adjusts for heteroscedasticity and autocorrelation.
-- 
+  
 ## 4. Cointegration Test (Johansen Test)
 Since variables are I(1), the Johansen Cointegration Test is conducted to check for long-run relationships.
 The test suggests the presence of two cointegrating vectors, indicating a long-term equilibrium relationship among the variables.
